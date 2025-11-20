@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ฟอร์มสมัครขอรับทุนการศึกษา</title>
+</head>
+<body>
+    <h2>แบบฟอร์มสมัครขอรับทุนการศึกษา วิทยาลัยอาชีวศึกษาสิงห์บุรี</h2>
+
+    <form action="submit_scholarship.php" method="post" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend><b>ข้อมูลส่วนตัว</b></legend>
+            
+            <label>ชื่อ-นามสกุล:</label>
+            <input type="text" name="fullname" placeholder="กรอกชื่อ-นามสกุล" required><br><br>
+
+            <label>เลขประจำตัวประชาชน:</label>
+            <input type="text" name="idcard" pattern="[0-9]{13}" placeholder="13 หลัก" required><br><br>
+
+            <label>วัน/เดือน/ปีเกิด:</label>
+            <input type="date" name="birthday" required><br><br>
+
+            <label>เพศ:</label>
+            <input type="radio" name="gender" value="male"> ชาย
+            <input type="radio" name="gender" value="female"> หญิง<br><br>
+
+            <label>อายุ:</label>
+            <input type="number" name="age" min="15" max="30" required> ปี<br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>ข้อมูลทางการศึกษา</b></legend>
+
+            <label>ระดับชั้นที่กำลังศึกษา:</label>
+            <select name="level" required>
+                <option value="">-- กรุณาเลือก --</option>
+                <option value="voc1">ปวส. 1</option>
+                <option value="voc2">ปวส. 2</option>
+            </select><br><br>
+
+            <label>สาขาวิชา:</label>
+            <input type="text" name="major" placeholder="กรอกชื่อสาขา" required><br><br>
+
+            <label>เกรดเฉลี่ยสะสม (GPA):</label>
+            <input type="number" name="gpa" step="0.01" min="0" max="4" required><br><br>
+        </fieldset>
+
+        
+        </body>
+        </html>

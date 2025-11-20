@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ตัวอย่างการใช้แท็ก Input</title>
+    <meta charset="UTF8">
+</head>
+<body>
+    <h2>แบบฟอร์มลงทะเบียนนักศึกษา</h2>
+    <form action="register.php" method="post">
+        <label>ชื่อ-นามสกุล:</label>
+        <input type="text" name="fullname" placeholder="กรอกชื่อ-นามสกุล" required><br><br>
+
+        <label>อีเมล:</label>
+        <input type="email" name="email" required placeholder="กรอก E-mail Address"> <br><br>
+
+        <label>รหัสผ่าน:</label>
+        <input type="password" name="password" required placeholder="กรอก password"><br><br>
+
+        <label>เพศ:</label>
+        <input type="radio" name="gender" value="male"> ชาย
+        <input type="radio" name="gender" value="female"> หญิง<br><br>
+
+        <label>งานอดิเรก:</label><br>
+        <input type="checkbox" name="hobby" value="music"> ฟังเพลง
+        <input type="checkbox" name="hobby" value="travel"> ท่องเที่ยว<br><br>
+
+        <label>วันเกิด:</label>
+        <input type="date" name="birthday"><br><br>
+
+        <label>อัปโหลดรูปภาพ:</label>
+        <input type="file" name="photo"><br><br>
+
+        <input type="submit" value="บันทึกข้อมูล">
+        <input type="reset" value="ยกเลิก">
+    </form>
+</body>
+</html>

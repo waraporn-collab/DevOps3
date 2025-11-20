@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title> การสร้าง Form </title>
+    <meta charset="UTF8">
+</head>
+<body>
+    <table width="80%" border="1">
+        <tr>
+            <td bgcolor="pink" align="center"> <h1> แบบฟอร์มลงทะเบียนนักศึกษา   </h1> </td>
+</tr>
+<tr>
+    <td>
+<form action="" method="post" name="form1">
+<label> ชื่อ-นามสกุล : </label>
+<input type="text" name="username"  placeholder="กรุณากรอกชื่อ-สกุล" > <p>
+
+<label> อีเมล : </label>
+<input type="email" name="email"  placeholder="กรอก E-mail Address" > <p>
+
+
+<label> รหัสผ่าน : </label>
+<input type="password" name="password"  placeholder="กรอก password" > <p>
+
+
+    <label> เพศ : </label>
+    <input type="radio" name="gender"> ชาย  
+        <input type="radio" name="gender"> หญิง <p>
+
+        <label>งานอดิเรก:</label><br>
+        <input type="checkbox" name="hobby" value="music"> ฟังเพลง
+        <input type="checkbox" name="hobby" value="travel"> ท่องเที่ยว<br><br>
+
+        <label>วันเกิด:</label>
+        <input type="date" name="birthday"><br><br>
+
+        <label>อัปโหลดรูปภาพ:</label>
+        <input type="file" name="photo"><br><br>
+
+        <input type="submit" value="บันทึกข้อมูล" >
+        <input type="reset" value="ยกเลิก">
+
+
+    </td>
+    </tr>
+
+</form>
+</table>
+</body>
+</html>
+
